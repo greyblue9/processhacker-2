@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+.vs
+bin
+obj
+bin-signed
+obj-signed
+lib32
+lib64

@@ -1,0 +1,272 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,3,0,0
+ PRODUCTVERSION 2,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0904b0"
+        BEGIN
+            VALUE "CompanyName", "dmex"
+            VALUE "FileDescription", "ToolStatus plugin for Process Hacker"
+            VALUE "FileVersion", "2.3"
+            VALUE "InternalName", "ToolStatus"
+            VALUE "LegalCopyright", "Licensed under the GNU GPL, v3."
+            VALUE "OriginalFilename", "ToolStatus.dll"
+            VALUE "ProductName", "ToolStatus plugin for Process Hacker"
+            VALUE "ProductVersion", "2.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc09, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONS DIALOGEX 0, 0, 191, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Enable toolbar",IDC_ENABLE_TOOLBAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,62,10
+    CONTROL         "Enable status bar",IDC_ENABLE_STATUSBAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,19,72,10
+    CONTROL         "Resolve ghost windows to hung windows",IDC_RESOLVEGHOSTWINDOWS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,32,152,10
+    CONTROL         "Auto-hide main menu (Alt or F10 key toggle)",IDC_ENABLE_AUTOHIDE_MENU,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,44,157,10
+    DEFPUSHBUTTON   "OK",IDOK,79,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,133,60,50,14
+END
+
+IDD_CUSTOMIZE_TB DIALOGEX 0, 0, 369, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Customize Toolbar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Available toolbar buttons:",IDC_STATIC,7,7,85,8
+    LISTBOX         IDC_AVAILABLE,7,18,122,117,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_ADD,133,50,50,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,134,68,50,14
+    LTEXT           "Current toolbar buttons:",IDC_STATIC,188,7,81,8
+    LISTBOX         IDC_CURRENT,187,18,122,117,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Move Up",IDC_MOVEUP,312,18,50,14
+    PUSHBUTTON      "Move Down",IDC_MOVEDOWN,312,36,50,14
+    LTEXT           "Text options:",IDC_STATIC,7,142,44,8
+    COMBOBOX        IDC_TEXTOPTIONS,56,139,123,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Search box:",IDC_STATIC,7,158,45,8
+    COMBOBOX        IDC_SEARCHOPTIONS,56,155,123,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Enable modern icons",IDC_ENABLE_MODERN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,141,83,10
+    CONTROL         "Auto-hide main menu (Alt or F10 key toggle)",IDC_ENABLE_AUTOHIDE_MENU,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,154,157,10
+    PUSHBUTTON      "Reset",IDC_RESET,258,170,50,14
+    DEFPUSHBUTTON   "Close",IDCANCEL,312,170,50,14
+    LTEXT           "Theme:",IDC_STATIC,7,174,45,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_THEMEOPTIONS,56,171,123,30,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CUSTOMIZE_SB DIALOGEX 0, 0, 373, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Customize Status Bar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Available status bar entries:",-1,7,7,91,8
+    LISTBOX         IDC_AVAILABLE,7,18,122,117,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_ADD,133,50,50,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,134,68,50,14
+    LTEXT           "Current status bar entries:",-1,188,7,87,8
+    LISTBOX         IDC_CURRENT,187,18,122,117,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Move Up",IDC_MOVEUP,316,18,50,14
+    PUSHBUTTON      "Move Down",IDC_MOVEDOWN,316,36,50,14
+    PUSHBUTTON      "Reset",IDC_RESET,316,103,50,14
+    DEFPUSHBUTTON   "Close",IDCANCEL,316,121,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_CUSTOMIZE_TB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_CUSTOMIZE_SB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINWND_ACCEL ACCELERATORS
+BEGIN
+    "K",            ID_SEARCH,              VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_SEARCH_ACTIVE       PNG                     "resources\\active_search.png"
+IDB_SEARCH_INACTIVE     PNG                     "resources\\inactive_search.png"
+IDB_APPLICATION         PNG                     "resources\\application.png"
+IDB_APPLICATION_GO      PNG                     "resources\\application_go.png"
+IDB_ARROW_REFRESH       PNG                     "resources\\arrow_refresh.png"
+IDB_CHART_LINE          PNG                     "resources\\chart_line.png"
+IDB_COG_EDIT            PNG                     "resources\\cog_edit.png"
+IDB_CROSS               PNG                     "resources\\cross.png"
+IDB_FIND                PNG                     "resources\\find.png"
+IDB_APPLICATION_GET     PNG                     "resources\\application_get.png"
+IDB_POWER               PNG                     "resources\\lightbulb_off.png"
+IDB_APPLICATION_GET_MODERN PNG                     "resources\\application_get_modern.png"
+IDB_APPLICATION_GO_MODERN PNG                     "resources\\application_go_modern.png"
+IDB_APPLICATION_MODERN  PNG                     "resources\\application_modern.png"
+IDB_ARROW_REFRESH_MODERN PNG                     "resources\\arrow_refresh_modern.png"
+IDB_CHART_LINE_MODERN   PNG                     "resources\\chart_line_modern.png"
+IDB_COG_EDIT_MODERN     PNG                     "resources\\cog_edit_modern.png"
+IDB_CROSS_MODERN        PNG                     "resources\\cross_modern.png"
+IDB_FIND_MODERN         PNG                     "resources\\find_modern.png"
+IDB_POWER_MODERN        PNG                     "resources\\lightbulb_off_modern.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_APPLICATION_GO_BMP  BITMAP                  "resources\\application_go.bmp"
+IDB_ARROW_REFRESH_BMP   BITMAP                  "resources\\arrow_refresh.bmp"
+IDB_CHART_LINE_BMP      BITMAP                  "resources\\chart_line.bmp"
+IDB_COG_EDIT_BMP        BITMAP                  "resources\\cog_edit.bmp"
+IDB_CROSS_BMP           BITMAP                  "resources\\cross.bmp"
+IDB_FIND_BMP            BITMAP                  "resources\\find.bmp"
+IDB_APPLICATION_BMP     BITMAP                  "resources\\application.bmp"
+IDB_SEARCH_ACTIVE_BMP   BITMAP                  "resources\\active_search.bmp"
+IDB_SEARCH_INACTIVE_BMP BITMAP                  "resources\\inactive_search.bmp"
+IDB_APPLICATION_GET_BMP BITMAP                  "resources\\application_get.bmp"
+IDB_POWER_BMP           BITMAP                  "resources\\lightbulb_off.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_OPTIONS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CUSTOMIZE_TB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CUSTOMIZE_SB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

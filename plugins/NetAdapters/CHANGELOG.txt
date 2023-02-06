@@ -1,0 +1,8 @@
+1.2
+ * Added adapter details window
+
+1.1
+ * Added native driver statistics support
+
+1.0
+ * Initial release
